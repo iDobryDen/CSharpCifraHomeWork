@@ -5,7 +5,7 @@ namespace TicTacToe;
 class Program
 {
     const char XSymbol = 'X';
-    const char OSymbol = 'Z';
+    const char OSymbol = 'V';
 
     static void Main(string[] args)
     {
