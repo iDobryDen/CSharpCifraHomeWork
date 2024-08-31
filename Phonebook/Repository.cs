@@ -43,9 +43,9 @@ public abstract class Repository
             return;
         }
         Console.WriteLine("Абоненты телефонной книги:");
-        foreach (PhoneNumber phone in _abonents)
+        foreach (PhoneNumber abonent in _abonents)
         {
-            Console.WriteLine($"Имя: {phone.Name}, Фамилия: {phone.LastName}, Номер: {phone.Number}");
+            Console.WriteLine($"Имя: {abonent.Name}, Фамилия: {abonent.LastName}, Номер: {abonent.Number}");
         }
     }
 
@@ -93,6 +93,21 @@ public abstract class Repository
         if (foundPhone != null)
         {
             Console.WriteLine($"Имя: {foundPhone.Name}, Фамилия: {foundPhone.LastName}");
+        }
+        else
+        {
+            Console.WriteLine("Номер не найден.");
+        }
+    }
+    
+    public void GetByName()
+    {
+        Console.WriteLine("Введите имя для поиска:");
+        string name = Console.ReadLine();
+        PhoneNumber foundName = _abonents.FirstOrDefault(p => ((PhoneNumber)p).Name == name) as PhoneNumber;
+        if (foundName != null)
+        {
+            Console.WriteLine($"Номер: {foundName.Number}, Фамилия: {foundName.LastName}");
         }
         else
         {

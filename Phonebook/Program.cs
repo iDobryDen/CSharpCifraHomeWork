@@ -60,9 +60,9 @@ public static class Program
                 case 3:
                     phonebookRepository.GetByNumber();
                     break;
-                //case 4:
-                    //phonebookRepository.GetByName();
-                    //break;
+                case 4:
+                    phonebookRepository.GetByName();
+                    break;
                 case 5:
                     phonebookRepository.PrintAll();
                     break;
