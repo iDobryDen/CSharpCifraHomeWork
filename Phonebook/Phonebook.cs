@@ -4,28 +4,32 @@ public class Phonebook : Repository
 {
     public override void Add(Abonent abonent)
     {
-        var foundAbonent = this.Get(abonent); 
-        if (foundAbonent == null)
+        if (this.Get(abonent) == null)
+        {
             this._abonents.Add(abonent);
-        throw new InvalidOperationException($"There is already a phone book with name {abonent.Name}");
+            Console.WriteLine("Номер добавлен.");
+        }
+        else
+        {
+            Console.WriteLine("Абонент с таким номером уже существует.");
+        }
     }
-    
+
     public override Abonent? Get(Abonent abonent)
     {
-        return this._abonents.SingleOrDefault(p => p.Name == abonent.Name);
+        if (abonent is PhoneNumber)
+        {
+            return this._abonents.SingleOrDefault(p => ((PhoneNumber)p).Number == ((PhoneNumber)abonent).Number);
+        }
+        return null;
     }
-    
+
     public override void Update(Abonent abonent)
     {
         var foundAbonent = this.Get(abonent);
         if (foundAbonent != null)
             foundAbonent = abonent;
-
     }
     
-    public override void Delete(Abonent abonent)
-    {
-        this._abonents.Remove(abonent);
-    }
 }
 
