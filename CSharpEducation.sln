@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook", "Phonebook\Phonebook.csproj", "{5BCE4C6D-6D2F-4AB9-820E-03E38E0DD3A4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork5", "HomeWork5", "{AF752536-1068-40E3-8162-B43F9B7B335F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork5", "HomeWork5\HomeWork5.csproj", "{D6BAA8D3-4C2B-498B-9475-845DC06BC32C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,11 +37,18 @@ Global
 		{5BCE4C6D-6D2F-4AB9-820E-03E38E0DD3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BCE4C6D-6D2F-4AB9-820E-03E38E0DD3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BCE4C6D-6D2F-4AB9-820E-03E38E0DD3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6BAA8D3-4C2B-498B-9475-845DC06BC32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BAA8D3-4C2B-498B-9475-845DC06BC32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BAA8D3-4C2B-498B-9475-845DC06BC32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BAA8D3-4C2B-498B-9475-845DC06BC32C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C51CD388-A1DD-43F1-B33D-6EB597A03FA8}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6BAA8D3-4C2B-498B-9475-845DC06BC32C} = {AF752536-1068-40E3-8162-B43F9B7B335F}
 	EndGlobalSection
 EndGlobal
